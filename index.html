@@ -1,46 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine's Day Card</title>
+    <title>Carte de Saint-Valentin</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #fef1f1;
-            font-family: Arial, sans-serif;
-        }
-        .card {
-            border: 2px solid #e6007e;
-            border-radius: 15px;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f0f1;
+            color: #333;
             text-align: center;
         }
-        .button {
-            background-color: #e6007e;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            cursor: pointer;
-            transition: background-color 0.3s;
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 50px auto;
+            width: 80%;
+            max-width: 600px;
+            border: 2px solid #e95393;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        .button:hover {
-            background-color: #d4006e;
+        h1 {
+            color: #e95393;
+        }
+        .interactive {
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <div class="card">
-        <h1>Happy Valentine's Day!</h1>
-        <p>To my beloved,</p>
-        <p>Voici une lettre d'amour pour vous. Je t'aime plus que les mots ne peuvent le dire.</p>
-        <button class="button" onclick="alert('Love is in the air!')">Click Me!</button>
+        <h1>Joyeuse Saint-Valentin!</h1>
+        <p>Cher(e) [Nom de votre bien-aimé(e)],</p>
+        <p>Voici une lettre d'amour interactive pour toi:</p>
+        <div class="interactive">
+            <button onclick="alert('Tu es mon monde!')">Clique ici pour une surprise</button>
+        </div>
+        <p>Avec tout mon amour,<br>[Votre Nom]</p>
     </div>
 </body>
 </html>
